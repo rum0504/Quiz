@@ -20,9 +20,9 @@ class QuizViewController: UIViewController {
     @IBOutlet var quizTextView: UITextView!
     
     //選択肢のボタン
-    @IBOutlet var choiceBotton1: UIButton!
-    @IBOutlet var choiceBotton2: UIButton!
-    @IBOutlet var choiceBotton3: UIButton!
+    @IBOutlet var choiceButton1: UIButton!
+    @IBOutlet var choiceButton2: UIButton!
+    @IBOutlet var choiceButton3: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,23 +60,22 @@ class QuizViewController: UIViewController {
         let tmpArray = quizuArray[0] as! [Any]
         
         //問題文のテキスト表示
-        quizTextView.text = tmpArray[0] as! String
+        quizTextView.text = (tmpArray[0] as! String)
         
         //選択肢以外のボタンにそれぞれの選択肢のテキストをセット
-        choiceBotton1.setTitle(tmpArray[1] as? String, for: .normal)
-        choiceBotton2.setTitle(tmpArray[2] as? String, for: .normal)
-        choiceBotton3.setTitle(tmpArray[3] as? String, for: .normal)
+        choiceButton1.setTitle(tmpArray[1] as? String, for: .normal)
+        choiceButton2.setTitle(tmpArray[2] as? String, for: .normal)
+        choiceButton3.setTitle(tmpArray[3] as? String, for: .normal)
     }
     
     @IBAction func choiceAnswer(sender: UIButton) {
         
         let tmpArray = quizuArray[0] as! [Any]
+        
         if tmpArray[4] as! Int == sender.tag {
-            
             //正解数増やす
             correctAnswer = correctAnswer + 1
         }
-        
         //解いた問題をquizArrayから取り除く
         quizuArray.remove(at: 0)
         
@@ -86,7 +85,6 @@ class QuizViewController: UIViewController {
         } else {
             choiceQuiz()
         }
-        
     }
     
     func performSegueToResult() {
