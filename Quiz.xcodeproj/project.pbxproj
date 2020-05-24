@@ -23,6 +23,7 @@
 		8896E4572479064400E59D44 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8896E4562479064400E59D44 /* ResultViewController.swift */; };
 		8896E45B2479375200E59D44 /* wallwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8896E45A2479375200E59D44 /* wallwood.jpg */; };
 		88C12ADB247A6DDA0030F549 /* 雑学クイズ.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C12ADA247A6DDA0030F549 /* 雑学クイズ.png */; };
+		88C12ADD247A87F70030F549 /* 雲ちゃん.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C12ADC247A87F70030F549 /* 雲ちゃん.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		8896E4562479064400E59D44 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		8896E45A2479375200E59D44 /* wallwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallwood.jpg; sourceTree = "<group>"; };
 		88C12ADA247A6DDA0030F549 /* 雑学クイズ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雑学クイズ.png"; sourceTree = "<group>"; };
+		88C12ADC247A87F70030F549 /* 雲ちゃん.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雲ちゃん.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		8896E4232479055E00E59D44 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				88C12ADC247A87F70030F549 /* 雲ちゃん.png */,
 				88C12ADA247A6DDA0030F549 /* 雑学クイズ.png */,
 				884454F4247A15E4005BC476 /* yellow.png */,
 				884454F2247A15D8005BC476 /* quiz.png */,
@@ -260,6 +263,7 @@
 				884454F5247A15E4005BC476 /* yellow.png in Resources */,
 				884454F02479E85A005BC476 /* 結果.jpeg in Resources */,
 				8896E4312479056100E59D44 /* LaunchScreen.storyboard in Resources */,
+				88C12ADD247A87F70030F549 /* 雲ちゃん.png in Resources */,
 				88C12ADB247A6DDA0030F549 /* 雑学クイズ.png in Resources */,
 				884454F3247A15D8005BC476 /* quiz.png in Resources */,
 				884454F12479E85A005BC476 /* 一色.jpg in Resources */,

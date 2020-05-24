@@ -133,9 +133,8 @@
                         <viewLayoutGuide key="safeArea" id="h4m-MH-3rJ"/>
                     </view>
                     <connections>
-                        <outlet property="choiceButton1" destination="MhS-8o-6yh" id="myt-JX-Wny"/>
-                        <outlet property="choiceButton2" destination="kBC-Bk-6Bt" id="83m-CL-aBV"/>
-                        <outlet property="choiceButton3" destination="CtI-g8-hDq" id="rcf-93-k7T"/>
+                        <outlet property="choiceButton2" destination="kBC-Bk-6Bt" id="Wpx-t8-sFU"/>
+                        <outlet property="choiceButton3" destination="CtI-g8-hDq" id="CWw-hb-hNw"/>
                         <outlet property="quizTextView" destination="rJS-mq-5MI" id="DpC-kf-v5E"/>
                         <segue destination="y2r-Eg-gEK" kind="presentation" identifier="toResultView" id="BhU-Xi-Xe9"/>
                     </connections>
@@ -153,7 +152,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="結果.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="JMX-fd-ETw">
-                                <rect key="frame" x="0.0" y="-56" width="414" height="952"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="902"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="雲ちゃん.png" translatesAutoresizingMaskIntoConstraints="NO" id="15z-sO-4Sd">
+                                <rect key="frame" x="53" y="142" width="309" height="274"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQP-J5-wAe">
@@ -168,18 +171,18 @@
                                     <action selector="back" destination="y2r-Eg-gEK" eventType="touchUpInside" id="3Id-eY-9nA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIN-XL-BTM">
-                                <rect key="frame" x="133" y="281" width="148" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.72244900465011597" green="0.93401461839675903" blue="0.83595162630081177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz.png" translatesAutoresizingMaskIntoConstraints="NO" id="kb7-NO-LVb">
                                 <rect key="frame" x="272" y="813" width="122" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIN-XL-BTM">
+                                <rect key="frame" x="124" y="245" width="172" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fIj-Vc-vKS"/>
@@ -199,5 +202,6 @@
         <image name="一色.jpg" width="1000" height="1000"/>
         <image name="結果.jpeg" width="620" height="349"/>
         <image name="雑学クイズ.png" width="444" height="129"/>
+        <image name="雲ちゃん.png" width="714" height="713"/>
     </resources>
 </document>

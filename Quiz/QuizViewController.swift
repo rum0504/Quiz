@@ -11,7 +11,7 @@ import UIKit
 class QuizViewController: UIViewController {
     
     //問題文を格納する配列
-    var quizuArray = [Any]()
+    var quizArray = [Any]()
     
     //正解数
     var correctAnswer : Int = 0
@@ -46,21 +46,19 @@ class QuizViewController: UIViewController {
         //問題をシャッフルしてquizArrayに格納する
         while (tmpArray.count > 0) {
             let index = Int(arc4random()) % tmpArray.count
-            quizuArray.append(tmpArray[index])
+            quizArray.append(tmpArray[index])
             tmpArray.remove(at: index)
         }
-        
         choiceQuiz()
-
         // Do any additional setup after loading the view.
     }
     
     func choiceQuiz() {
         //一時的にクイズを取り出す配列
-        let tmpArray = quizuArray[0] as! [Any]
+        let tmpArray = quizArray[0] as! [Any]
         
         //問題文のテキスト表示
-        quizTextView.text = (tmpArray[0] as! String)
+        quizTextView.text = tmpArray[0] as! String
         
         //選択肢以外のボタンにそれぞれの選択肢のテキストをセット
         choiceButton1.setTitle(tmpArray[1] as? String, for: .normal)
@@ -70,17 +68,17 @@ class QuizViewController: UIViewController {
     
     @IBAction func choiceAnswer(sender: UIButton) {
         
-        let tmpArray = quizuArray[0] as! [Any]
+        let tmpArray = quizArray[0] as! [Any]
         
         if tmpArray[4] as! Int == sender.tag {
             //正解数増やす
             correctAnswer = correctAnswer + 1
         }
         //解いた問題をquizArrayから取り除く
-        quizuArray.remove(at: 0)
+        quizArray.remove(at: 0)
         
         //解いた問題数の合計があらかじめ設定していた問題数に達したら結果画面へ
-        if quizuArray.count == 0 {
+        if quizArray.count == 0 {
             performSegueToResult()
         } else {
             choiceQuiz()
@@ -111,3 +109,4 @@ class QuizViewController: UIViewController {
     */
 
 }
+
